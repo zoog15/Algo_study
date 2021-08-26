@@ -9,7 +9,6 @@ for i in range(T):
     n = int(input())  # 총 몇개 물건?
     a = list(map(int, input().split()))  # 각 물건의 매매가
     prof = 0  # 이득
-    change = 0
     max_p = max(a)  # 처음 a에서의 최대값
     b = copy.deepcopy(a)
     b.sort(reverse=True)
