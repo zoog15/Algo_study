@@ -9,9 +9,9 @@ M_idx, M_cnt = 0, 0
 
 for i in range(1, N + 1):
     P, K = map(int, sys.stdin.readline().split())
-    if K - P - 1 > M_cnt:
+    if K - P + 1 > M_cnt:
         M_idx = i
-        M_cnt = K-P-1
+        M_cnt = K-P+1
     cnt = 0
     for j in range(P, K + 1):
         if not cake[j]:
