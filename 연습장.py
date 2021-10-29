@@ -1,14 +1,13 @@
-import sys
-
-a, b, c = map(str, sys.stdin.readline().split())
-s = []
-
-s.append(a)
-s.append(b)
-s.append(c)
-
-s.sort()
-print(s[0])
-print(s[2])
+import math
 
 
+def comb(a,b):
+    result = math.factorial(b) // (math.factorial(b-a) * math.factorial(a))
+    return result
+
+
+tc = int(input())  # 테스트 케이스
+
+for i in range(tc):
+    a, b = map(int, input().split())
+    print(comb(a, b))
