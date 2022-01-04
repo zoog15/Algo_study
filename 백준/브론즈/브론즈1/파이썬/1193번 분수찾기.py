@@ -5,10 +5,9 @@ if n == 1:
     y = 1
 else:
     size = 1
-    temp = n
 
-    while temp -size > 0:
-        temp -= size
+    while n -size > 0:
+        n -= size
         size += 1
 
     # print(n, temp, size)
@@ -17,14 +16,14 @@ else:
         x = 1
         y = size
 
-        for i in range(temp-1):
+        for i in range(n-1):
             x += 1
             y -= 1
     else:
         x = size
         y = 1
 
-        for i in range(temp-1):
+        for i in range(n-1):
             x -= 1
             y += 1
 
